@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome</title>
 
     <style>
         * {
@@ -18,12 +18,18 @@
             background-size: cover;
             
         }
-        div{
+        #main{
             padding: 10%;
             text-align: center;
         }
-        div p {
+        #main p {
             display: inline-block;
+        }
+
+        #hint {
+            font-size: 55%;
+            width: auto;
+            cursor: -webkit-grabbing;
         }
 
         #inputs {
@@ -39,28 +45,31 @@
     </style>
 </head>
 <body>
-    <div>
-        <button id="inputs" style="border: 0.5px solid; border-radius: 10px;">Click me</button>
+    <div id="hint">
+        <p title="find the hidden button !">mouse here</p>
+    </div>
+    <div id="main">
+        <button type="button" id="a1" style="border: 0px; cursor: pointer;">&nbsp;&nbsp;</button>
         <h1><em>Hi, </em><em style="color: rgb(219, 51, 253);">Elysia</em></h1>
         <hr style="width: 25%;">
-        <p>Happy Birthday to <em style="color: rgb(219, 51, 253);" id="wfaw">you!</em></p>
+        <p>Happy Birthday to <em style="color: rgb(219, 51, 253);" id="aa2">you!</em></p>
         <br>
-        <em id="hoverMe"> hover me!</em>
+        <em id="ae1"> hover me!</em>
         <br>
-        <p></p>
+        
     </div>
 
     <footer>
-        <p>- Kai Jie</p>
+        <p>Kai Jie</p>
     </footer>
     <script>
-        var hey = () => {document.getElementById("hoverMe").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";}
-        var click = () => {document.writeln("<div style='margin: 20%; text-align: center;'>Reduced to Atoms</div>");}
-        var change = () => {document.getElementById("wfaw").innerHTML = "Elysia!";}
+        var hey = () => {document.getElementById("ae1").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";}
+        var click = () => {window.open("newpage.html", "_blank").focus()}
+        var change = () => {document.getElementById("aa2").innerHTML = "Elysia!";}
 
-        document.getElementById("hoverMe").addEventListener("mouseover", hey);
-        document.getElementById("inputs").addEventListener("click", click)
-        document.getElementById("wfaw").addEventListener("mouseover", change)
+        document.getElementById("ae1").addEventListener("mouseover", hey);
+        document.getElementById("a1").addEventListener("click", click);
+        document.getElementById("aa2").addEventListener("mouseover", change);
     </script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        
+        }
+        body {
+            margin-bottom: 100%;
+            background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        button {
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        #main{
+            padding: 5%;
+            text-align: center;
+        }
+        #main p{
+            display: inline-block;
+        }
+
+        #inputs {
+            background-color: transparent;
+            border: transparent;
+        }
+
+        footer {
+            margin-top: 20%;
+            font-size: 50%;
+            text-align: center;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2 style="font-weight: 300;">hey, Elysia</h2>
+        <p>You're my favourite person to be with! <em style="color: rgb(219, 51, 253);" id="rbr">you!</em></p>
+        <br>
+        <em id="hoverMe" style="font-size: 75%;" >I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em></em>
+    </div>
+
+    <footer>
+        <p>New Page</p> 
+        <b>Made by Kai Jie</b>
+    </footer>
+    
+    
+    <script>
+        var change = () => {
+            var text = "Elysia!";
+            document.getElementById("rbr").innerHTML = text;
+        }
+
+        /*document.getElementById("hoverMe").addEventListener("mouseover", function() {
+            document.getElementById("hoverMe").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";
+        }); */
+        document.getElementById("rbr").addEventListener("mouseover", change)
+    </script>
+    
+</body>
+</html>

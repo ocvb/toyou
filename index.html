@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        body {
+            margin-bottom: 100%;
+            background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        div{
+            padding: 10%;
+            text-align: center;
+        }
+        div p {
+            display: inline-block;
+        }
+
+        #inputs {
+            background-color: transparent;
+            border: transparent;
+        }
+
+        footer {
+            font-size: 50%;
+            text-align: center;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="inputs" style="border: 0.5px solid; border-radius: 10px;">Click me</button>
+        <h1><em>Hi, </em><em style="color: rgb(219, 51, 253);">Elysia</em></h1>
+        <hr style="width: 25%;">
+        <p>Happy Birthday to <em style="color: rgb(219, 51, 253);" id="wfaw">you!</em></p>
+        <br>
+        <em id="hoverMe"> hover me!</em>
+        <br>
+        <p></p>
+    </div>
+
+    <footer>
+        <p>- Kai Jie</p>
+    </footer>
+    <script>
+        var hey = () => {document.getElementById("hoverMe").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";}
+        var click = () => {document.writeln("<div style='margin: 20%; text-align: center;'>Reduced to Atoms</div>");}
+        var change = () => {document.getElementById("wfaw").innerHTML = "Elysia!";}
+
+        document.getElementById("hoverMe").addEventListener("mouseover", hey);
+        document.getElementById("inputs").addEventListener("click", click)
+        document.getElementById("wfaw").addEventListener("mouseover", change)
+    </script>
+</body>
+</html>

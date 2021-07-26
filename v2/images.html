@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        body {
+            margin-bottom: 100%;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        #main{
+            padding: 5%;
+            text-align: center;
+        }
+        #main p {
+            display: inline-block;
+        }
+        #main hr {
+            border-top: 1px solid #d6a0ff;
+            border-bottom: 1px solid #ddbef8;
+        }
+
+        #mainTable {
+            text-align: center;
+            margin: auto auto;
+            border-radius: 10px;
+        }
+        #mainTable td{
+            margin: 5%;
+            padding: 1%;
+        }
+        #mainTable tr td img {
+            border-radius: 7px;
+            width: 300px;
+            height: auto;
+        }
+        #mainTable caption {
+            padding: 5%;
+        }
+
+        #inputs {
+            background-color: transparent;
+            border: transparent;
+        }
+
+        footer {
+            margin-top: 20%;
+            font-size: 50%;
+            text-align: center;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <table id="mainTable">
+            <caption id="caption">We are here !</caption>
+            <tr>
+                <td><img src="img/RE4wwuS.jpg" alt=""></td>
+                <td><img src="img/RE4wwuS.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="img/RE4wwuS.jpg" alt=""></td>
+                <td><img src="img/RE4wwuS.jpg" alt=""></td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <footer>
+        <p>The Gallery !</p> 
+        <b>Made by Kai Jie</b>
+    </footer>
+    
+    
+    <script>
+        var hey = () => {document.getElementById("hoverMe").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";}
+        var change = () => {
+            var text = "Elysia!";
+            document.getElementById("rbr").innerHTML = text;
+        }
+
+        document.getElementById("hoverMe").addEventListener("mouseover", hey);
+        document.getElementById("rbr").addEventListener("mouseover", change)
+    </script>
+    
+</body>
+</html>

@@ -7,40 +7,43 @@
     <title>Welcome</title>
 
     <style>
-        * {
+        body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             overflow: hidden;
-        }
-        body {
             margin-bottom: 100%;
             background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
             background-repeat: no-repeat;
-            background-size: cover;
             cursor: default;
         }
+        button {
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
         #main{
-            padding: 10%;
+            padding: 5%;
             text-align: center;
         }
-        #main p {
+        #main p{
             display: inline-block;
-        }
-
-        #hint {
-            font-size: 55%;
-            width: auto;
-        }
-
-        #hint p {
-            cursor: pointer;
         }
 
         #inputs {
             background-color: transparent;
             border: transparent;
         }
+        
+        #me {
+            font-size: 60%;
+            padding: 5px;
+            background-color: #b4f6ff;
+            border-radius: 6px;
+            box-shadow: rgb(196, 196, 196) 2px 3px 5px 0px;
+            cursor: pointer;
+        }
 
         footer {
+            margin-top: 20%;
             font-size: 50%;
             text-align: center;
             background-position: center;
@@ -48,31 +51,32 @@
     </style>
 </head>
 <body>
-    <div id="hint">
-        <p title="find the hidden button !">mouse here</p>
-    </div>
+    <span id="me">me</span>
     <div id="main">
-        <button type="button" id="a1" style="border: 0px; cursor: pointer;">&nbsp;&nbsp;</button>
-        <h1><em>Hi, </em><em style="color: rgb(219, 51, 253);">Elysia</em></h1>
-        <hr style="width: 25%;">
-        <p>Happy Birthday to <em style="color: rgb(219, 51, 253);" id="aa2">you!</em></p>
-        <br>
-        <em id="ae1"> hover me!</em>
-        <br>
-        
+        <div>
+            <div style="font-size: 30px;">
+                <p>hii, </p> 
+                <p style="color: rgb(219, 51, 253);">Elysia</p>
+            </div>
+            <p>You're my favourite person to be with!</p>
+        </div>
     </div>
 
     <footer>
-        <p>Kai Jie</p>
+        <p>New Page</p> 
+        <b>Made by Kai Jie</b>
     </footer>
+    
+    
     <script>
-        var hey = () => {document.getElementById("ae1").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";}
-        var click = () => {window.open("newpage.html", "_blank").focus()}
-        var change = () => {document.getElementById("aa2").innerHTML = "Elysia!";}
+        document.getElementById("me").addEventListener("click", function() {
+            window.location = "me.html"
+        })
 
-        document.getElementById("ae1").addEventListener("mouseover", hey);
-        document.getElementById("a1").addEventListener("click", click);
-        document.getElementById("aa2").addEventListener("mouseover", change);
+        /*document.getElementById("hoverMe").addEventListener("mouseover", function() {
+            document.getElementById("hoverMe").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";
+        }); */
     </script>
+    
 </body>
 </html>

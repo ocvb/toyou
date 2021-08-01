@@ -4,45 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Welcome</title>
-
-    <style>
-        body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            overflow: hidden;
-            margin-bottom: 100%;
-            background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
-            background-repeat: no-repeat;
-            cursor: default;
-            text-justify: auto;
-        }
-        button {
-            border: 0;
-            background-color: transparent;
-            cursor: pointer;
-        }
-        #main{
-            padding: 5%;
-            text-align: center;
-        }
-        #main p{
-            display: inline-block;
-        }
-
-        #inputs {
-            background-color: transparent;
-            border: transparent;
-        }
-    
-        footer {
-            margin-top: 20%;
-            font-size: 50%;
-            text-align: center;
-            background-position: center;
-        }
-    </style>
 </head>
 <body>
+    <div id="overlay"></div>
+
     <div id="main">
         <div>
             <div style="font-size: 30px;">
@@ -60,6 +27,14 @@
     
     
     <script>
+        function loading() {
+            setTimeout(function() {
+                document.getElementById("overlay").style.display = "none";
+            }, 300)
+        }
+        onload(loading())
+
+        
         document.getElementById("me").addEventListener("click", function() {
             window.location = "me.html"
         });

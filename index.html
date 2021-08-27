@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,65 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Welcome</title>
 </head>
+
 <body>
-    <div id="overlay"></div>
+    <div id="overlay">
+        <p id="meloading">Loading :D</p>
+    </div>
 
     <div id="main">
-        <div>
-            <div style="font-size: 30px;">
-                <p>hii, </p> 
-                <p style="color: rgb(219, 51, 253);">Elysia</p>
-            </div>
-            <p>You're my favourite person to be with!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <header id="header">
+            <p style="font-size: 30px;">hii, <b>Elysia</b></p>
+        </header>
+        <div id="content">
+            <p>Me and you :D</p>
+            <p>I love you elysia!</p>
+            <p>I love you elysia!</p>
+            <p>I love you elysia!</p>
+            <p>I love you elysia!</p>
+            <p>I love you elysia!</p>
+            <p>I love you elysia!</p>
+            <p>I love you elysia!</p>
         </div>
+
     </div>
 
     <footer>
         <p>Last update: 28 July 2021</p>
         <b>Made by Kai Jie</b>
     </footer>
-    
-    
-    <script>
-        function loading() {
-            setTimeout(function() {
-                document.getElementById("overlay").style.display = "none";
-            }, 300)
-        }
-        onload(loading())
 
-        
-        document.getElementById("me").addEventListener("click", function() {
-            window.location = "me.html"
-        });
+
+    <script type="application/javascript">
+        window.onload = () => {
+            function uhh() {
+                setTimeout(() => {
+                    document.getElementById('meloading').innerHTML = 'Loading. :D';
+                    setTimeout(() => {
+                        document.getElementById('meloading').innerHTML = 'Loading.. :D';
+                    }, 800)
+                    setTimeout(() => {
+                        document.getElementById('meloading').innerHTML = 'Loading... :D';
+                    }, 1000)
+
+                }, 600);
+            }
+            setInterval(() => {
+                uhh()
+            }, 1200);
+
+            setTimeout(function () {
+                document.getElementById("overlay").style.display = "none";
+            }, 500)
+        }
     </script>
-    
+
 </body>
+
 </html>

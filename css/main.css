@@ -27,6 +27,7 @@ body {
     margin-top: 26%;
 } 
 
+/*
 nav {
     font-size: 19px;
     padding: 2px 0;
@@ -48,6 +49,11 @@ nav a{
 }
 nav a:hover {
     color: rgb(0, 0, 0);
+}*/
+
+header {
+    margin-top: 100px;
+    padding: 0 auto;
 }
 
 header p, header b{
@@ -77,6 +83,6 @@ header p, header b{
 
 footer {
     margin-top: 20%;
-    font-size: 8px;
+    font-size: 10px;
     text-align: center;
 }

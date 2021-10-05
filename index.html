@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Sorry!</title>
+    <title>Welcome</title>
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        body {
+            margin-bottom: 100%;
+            background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: default;
+        }
+        #main{
+            padding: 10%;
+            text-align: center;
+        }
+        #main p {
+            display: inline-block;
+        }
+
+        #hint {
+            font-size: 55%;
+            width: auto;
+        }
+
+        #hint p {
+            cursor: pointer;
+        }
+
+        #inputs {
+            background-color: transparent;
+            border: transparent;
+        }
+
+        footer {
+            font-size: 50%;
+            text-align: center;
+            background-position: center;
+        }
+    </style>
 </head>
-
 <body>
-    <div id="overlay">
-    </div>
-
     <div id="main">
-        <header id="header">
-            <p style="font-size: 30px;">oh look you're here!</p>
-        </header>
-        <div id="content">
-            <p>
-                I'm really sorry about everything and everything i've done, <br>
-                I've reflected on everything i've done.
-            </p>
-            <p>
-                I hope you find a better person, hopefully it wont be like me.
-            </p>
-        </div>
-
+        <button type="button" id="a1" style="border: 0px; cursor: pointer;">&nbsp;&nbsp;</button>
+        <h1><em>Hi, </em><em style="color: rgb(219, 51, 253);">Elysia</em></h1>
+        <hr style="width: 25%;">
+        <p>Happy Birthday to <em style="color: rgb(219, 51, 253);" id="aa2">you!</em></p>
+        <br>
+        <em id="ae1"> hover me!</em>
+        <br>
+        
     </div>
 
     <footer>
-        <p>Click <a href="old/index.html">here</a> to visit old site.</p>
-        <p>- 24 September 2021 -</p>
+        <p>- Made by Kai Jie -</p>
     </footer>
+    <script>
+        var hey = () => {document.getElementById("ae1").innerHTML = "I love you, <em style='color: rgb(219, 51, 253);'>Elysia!</em>";}
+        var change = () => {document.getElementById("aa2").innerHTML = "Elysia!";}
 
-
-    <script type="application/javascript">
-        window.onload = () => {
-            setTimeout(function () {
-                document.getElementById("overlay").style.display = "none";
-            }, 500)
-        }
+        document.getElementById("ae1").addEventListener("mouseover", hey);
+        document.getElementById("a1").addEventListener("click", click);
+        document.getElementById("aa2").addEventListener("mouseover", change);
     </script>
-
 </body>
-
 </html>

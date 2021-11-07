@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-
+    <script src="js/cookies.js"></script>
     <style>
         * {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -49,7 +49,6 @@
 </head>
 <body>
     <div id="main">
-        <button type="button" id="a1" style="border: 0px; cursor: pointer;">&nbsp;&nbsp;</button>
         <h1><em>Hi, </em><em style="color: rgb(219, 51, 253);">Elysia</em></h1>
         <hr style="width: 25%;">
         <p>Happy Birthday to <em style="color: rgb(219, 51, 253);" id="aa2">you!</em></p>
@@ -67,7 +66,6 @@
         var change = () => {document.getElementById("aa2").innerHTML = "Elysia!";}
 
         document.getElementById("ae1").addEventListener("mouseover", hey);
-        document.getElementById("a1").addEventListener("click", click);
         document.getElementById("aa2").addEventListener("mouseover", change);
     </script>
 </body>

@@ -1,5 +1,5 @@
 function setCookies(e) {
-    document.cookie = "visited=" + e + "; path=/";
+    document.cookie = "visitSite=" + e + "; path=/";
 }
 
 function getCookie(cname) {
@@ -19,7 +19,7 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    let status = getCookie("visited");
+    let status = getCookie("visitSite");
     let visitedTimes = getCookie("visitedTimes");
     times = 1;
     setTimes = document.cookie = "visitedTimes=" + times + "; path=/";

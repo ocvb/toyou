@@ -36,7 +36,7 @@ function checkCookie() {
         }
 
     } else {
-        status = true
+        status = "mywords"
         if (status != "" && status != null) {
             if (times != 2) {
                 setCookies(status);
